@@ -2,10 +2,13 @@
 <html>
 <head>
 	<title>shopBuffet</title>
+  <link rel="stylesheet" type="text/css" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/nav.min.css">
 	<script type="text/javascript" src="node_modules/jquery/dist/jquery.min.js"></script>
 	<script type="text/javascript" src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="node_modules/angular/angular.min.js"></script>
 	<script type="text/javascript" src="node_modules/@uirouter/angularjs/release/angular-ui-router.min.js"></script>
+
 	<link rel="stylesheet" type="text/css" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
 
 	<link rel="stylesheet" type="text/css" href="app/css/style">
@@ -147,5 +150,73 @@
 
 
 </footer>
+=======
+	<script type="text/javascript" src="js/nav.min.js"></script>
+	
+</head>
+<body ng-app="myApp" controller="appController">
+<header><nav>
+  <!--Use an ul to organize menu-->
+  <ul id="menu">
+    
+    <!--Use li to create menu links-->
+    <li class="link">
+      <a href="#" class="linkName">
+        Electronics&nbsp;<img ng-src="{{image}}"/>
+      </a>
+    </li>
+    
+    <li class="link">
+      <a href="#" class="linkName">
+        Appliances&nbsp;<img ng-src="{{image}}"/>
+      </a>
+      <!--Create another ul, inside the li with a class="submenu" if you want a dropdown.  The class submenu is attached to the directive in the angular app.-->
+      <sub-menu></sub-menu>
+    </li>
+    
+    <li class="link">
+      <a href="#" class="linkName">
+        Men&nbsp;<img ng-src="{{image}}"/>
+      </a>
+      <sub-menu1></sub-menu1>
+     </li>
+    
+    <li class="link">
+      <a href="#" class="linkName">
+        Women&nbsp;<img ng-src="{{image}}"/>
+      </a>
+    </li>
+
+    <li class="link">
+      <a href="#" class="linkName">
+        Baby & Kids&nbsp;<img ng-src="{{image}}"/>
+      </a>
+    </li>
+
+	<li class="link">
+      <a href="#" class="linkName">
+        Home & Furniture&nbsp;<img ng-src="{{image}}"/>
+      </a>
+    </li>
+
+    <li class="link">
+      <a href="#" class="linkName">
+        Books & More&nbsp;<img ng-src="{{image}}"/>
+      </a>
+    </li>
+
+    <li class="link">
+      <a href="#" class="linkName">
+        Offer Zone&nbsp;<img ng-src="{{image}}"/>
+      </a>
+    </li>
+
+
+  </ul>
+</nav>
+</header>
+<section></section>
+<footer></footer>
+
 </body>
 </html>
