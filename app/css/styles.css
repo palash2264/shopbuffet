@@ -1,6 +1,32 @@
-body {
-  background: red; }
-  body h2 {
-    color: yellow; }
+body header .headerSection {
+  height: 140px;
+  background: #1a9080; }
+  body header .headerSection #topMenuBox {
+    height: 40px; }
+  body header .headerSection #searchCartBox {
+    height: 50px; }
+  body header .headerSection #navigationBox .navbar.navbar-default {
+    background-color: #1a9080;
+    border: none;
+    border-radius: 0; }
+    body header .headerSection #navigationBox .navbar.navbar-default .navbar-brand {
+      color: white; }
+    body header .headerSection #navigationBox .navbar.navbar-default .nav.navbar-nav.main-menu {
+      width: 90%; }
+      body header .headerSection #navigationBox .navbar.navbar-default .nav.navbar-nav.main-menu li {
+        width: 150px;
+        text-align: center; }
+        body header .headerSection #navigationBox .navbar.navbar-default .nav.navbar-nav.main-menu li a {
+          color: white; }
+      body header .headerSection #navigationBox .navbar.navbar-default .nav.navbar-nav.main-menu li:hover {
+        box-shadow: 0 0 10px -1px; }
+body header .sub-nav-items {
+  height: 400px;
+  width: 900px;
+  position: absolute;
+  top: 50px;
+  left: 218px;
+  background: #f8f8f8;
+  box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.62); }
 
 /*# sourceMappingURL=styles.css.map */

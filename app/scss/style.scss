@@ -1,6 +1,46 @@
 body{
-	background: red;
-	h2{
-	color:yellow;
+	header{
+		.headerSection {
+		    height: 140px;
+		    background: #1a9080;
+			#topMenuBox {
+			    height: 40px;
+			}
+			#searchCartBox {
+			    height: 50px;
+			}
+			#navigationBox{
+				.navbar.navbar-default{
+					background-color: #1a9080;
+				    border: none;
+				    border-radius: 0;
+				    .navbar-brand{
+				    	color:white;
+				    }
+					.nav.navbar-nav.main-menu {
+					    width: 90%;
+					    li{
+					    	width: 150px;
+	    					text-align: center;
+	    					a{
+	    					color: white;
+	    					}
+					    }
+					    li:hover{
+					    box-shadow: 0 0 10px -1px;
+					    }
+					}
+				}
+			}
+		}
+		.sub-nav-items {
+		    height: 400px;
+		    width: 900px;
+		    position: absolute;
+		    top: 50px;
+		    left: 218px;
+		    background: #f8f8f8;
+		    box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.62);
+		}
 	}
 }

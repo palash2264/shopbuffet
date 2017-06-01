@@ -5,7 +5,19 @@ module.exports = function(grunt){
 		watch:{
 			sass:{
 				files:['app/scss/*.scss'],
-				tasks:['sass','cssmin','uglify']
+				tasks:['sass'],
+			},
+			cssmin:{
+				files:['app/css/*.css'],
+				tasks:['cssmin'],
+			},
+			uglify:{
+				files:['app/js/*.js'],
+				tasks:['uglify'],
+			},
+			copy:{
+				files:['app/html/*.html'],
+				tasks:['copy:subdir']
 			}
 		},
 
@@ -31,23 +43,37 @@ module.exports = function(grunt){
 
 		uglify:{
 			options:{
-				manage:false
+				beautify:true,
+				mangle: true
 			},
-			my_target:{
-				files:[{
-					expand: true,
-					cwd: 'app/js/',
-					src: '**/*.js',
-					dest: 'dist/js/',
-					ext: '.min.js'
-				}]
-			}
+			all_src : { 
+		      options : { 
+		        sourceMap : true, 
+		        sourceMapName : 'sourceMap.map'
+		      }, 
+		      src : 'app/**/*.js', 
+		      dest : 'dist/js/composite.all.min.js'
+		    }
+		},
+
+		livereload: {
+			options: {
+				base: 'app',
+			},
+			files: ['dist/**/*']
 		},
 
 		copy: {
+		  subdir:{
+		  	files: [{
+			  	expand:true,
+			  	cwd: 'app/html',
+			  	src: '**',
+			  	dest: 'dist/html/'		  		
+		  	}]			 
+		  },
 		  main: {
-		  	files: [
-		  	{
+		  	files: [{
 			  	expand:true,
 			  	cwd: 'node_modules/',
 			  	src: '**',
@@ -56,16 +82,22 @@ module.exports = function(grunt){
 			  	expand:true,
 			  	src: '*.html',
 			  	dest: 'dist/'
-		  	}
-		  	]
+		  	}]
 
 		  },
+		  html:{
+		  	files: [{
+			  	expand:true,
+			  	src: '*.html',
+			  	dest: 'dist/'
+		  	}]
+
+		  }
 		},
 
 		connect:{
 			server:{
 				options:{
-					livereload:35729,
 					port:8000,
 					hostname: '*',
 					base:'dist/'
@@ -80,13 +112,11 @@ module.exports = function(grunt){
 	grunt.loadNpmTasks('grunt-contrib-watch');
 	grunt.loadNpmTasks('grunt-contrib-connect');
 	grunt.loadNpmTasks('grunt-contrib-copy');
+	grunt.loadNpmTasks('grunt-livereload');
 
-	grunt.registerTask('build',['uglify','sass','cssmin']);
+	grunt.registerTask('build',['uglify','sass','cssmin','copy']);
 	grunt.registerTask('serve',[
-		'sass',
-		'cssmin',
-		'uglify',
-		'copy',
+		'copy:html',
 		'connect:server',
 		'watch'
 	]);
