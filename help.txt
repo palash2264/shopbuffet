@@ -1,0 +1,3 @@
+1. Dynamic Header directive ---- Done.
+2. Dynamic Footer directive ---- Need to work.
+3. Create routes for all items in shop -- need to work

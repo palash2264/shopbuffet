@@ -1,0 +1,45 @@
+{ 
+   "data" : 
+   [
+      {
+         "subhead": "Western Wear",
+         "childitems" : ["Top, T-Shirts & Shirts","Dresses","Jeans","Trousers & Capris","Shorts & Skirts"],
+         "portfolio" : ["Top, T-Shirts-Shirts","Dresses","Jeans","Trousers-Capris","Shorts-Skirts"]
+      },
+      {
+         "subhead": "Lingerie & Sleepwear",
+         "childitems" : ["Bras","Panties","Nightsuits & Nightdresses"],
+         "portfolio" : ["Bras","Panties","Nightsuits-Nightdresses"]
+      },
+      {
+         "subhead": "Ethnic Wear",
+         "childitems" : ["Sarees","Kurtas & Kurtis","Dress Material","Lehenga Choli","Blouse","Leggings & Salwars","Anarkali Suits"],
+         "portfolio" : ["Sarees","Kurtas-Kurtis","Dress-Material","Lehenga-Choli","Blouse","Leggings-Salwars","Anarkali-Suits"]
+      },
+      {
+         "subhead": "Sports wear",
+         "childitems" : ["Sports T-Shirts","Track Pants","Track Suits","Shorts"],
+         "portfolio" : ["Sports-T-Shirts","Track-Pants","Track-Suits","Shorts"]
+      },
+      {
+         "subhead": "Footwear",
+         "childitems" : ["Flats","Heels","Wedges","Sports Shoes","Casual Shoes","Ballerinas","Boots","Slippers & Flip- Flop's"],
+         "portfolio" : ["Flats","Heels","Wedges","Sports-Shoes","Casual-Shoes","Ballerinas","Boots","Slippers-Flip-Flop's"]
+      },
+      {
+         "subhead": "Beauty & Grooming",
+         "childitems" : ["Make Up","Skin Care","Hair Care","Deodorants & Perfumes"],
+         "portfolio" : ["Make-Up","Skin-Care","Hair-Care","Deodorants-Perfumes"]
+      },
+      {
+         "subhead": "Jewellery",
+         "childitems" : ["Precious Jewellery","Artificial Jewellery","Silver Jewellery"],
+         "portfolio" : ["Precious-Jewellery","Artificial-Jewellery","Silver-Jewellery"]
+      },
+      {
+         "subhead": "Accessories",
+         "childitems" : ["Smart Bands","Handbags & Totes","Wallets & Belts","Sunglasses & Frames"],
+         "portfolio" : ["Smart-Bands","Handbags-Totes","Wallets-Belts","Sunglasses-Frames"]
+      }  
+   ]
+}

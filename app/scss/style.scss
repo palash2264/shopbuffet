@@ -31,6 +31,23 @@ body{
 					    }
 					}
 				}
+				#submenu{
+					.subnavbox {
+					    padding: 0;
+					    margin: 5px 0 0 0;
+
+					    .subhead {
+						    list-style: none;
+						    font-weight: bold;
+						    padding: 0 0 5px 0;
+						}
+						.subnav {
+						    list-style: none;
+						    font-size: 13px;
+						    padding: 0 0 3px 0;
+						}
+					}
+				}
 			}
 		}
 		.sub-nav-items {

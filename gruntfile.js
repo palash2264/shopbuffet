@@ -44,7 +44,9 @@ module.exports = function(grunt){
 		uglify:{
 			options:{
 				beautify:true,
-				mangle: true
+				mangle: {
+			        reserved: ['$http','response']
+			    }
 			},
 			all_src : { 
 		      options : { 
@@ -103,7 +105,7 @@ module.exports = function(grunt){
 					base:'dist/'
 				}
 			}
-		}
+		},
 	});
 
 	grunt.loadNpmTasks('grunt-contrib-cssmin');
@@ -113,6 +115,7 @@ module.exports = function(grunt){
 	grunt.loadNpmTasks('grunt-contrib-connect');
 	grunt.loadNpmTasks('grunt-contrib-copy');
 	grunt.loadNpmTasks('grunt-livereload');
+	grunt.loadNpmTasks('grunt-execute');
 
 	grunt.registerTask('build',['uglify','sass','cssmin','copy']);
 	grunt.registerTask('serve',[

@@ -17,22 +17,22 @@
 			          <div id="navbar" class="navbar-collapse collapse in" aria-expanded="true">
 			            <ul class="nav navbar-nav main-menu">
 			              <li id="men" data-ng-mouseover="showSubNav($event)">
-			              	<a href="#">Men</a>
+			              	<a ui-sref="men">Men</a>
 			              </li>
 			              <li id="women" data-ng-mouseover="showSubNav($event)">
-			              	<a href="#">Women</a>
+			              	<a ui-sref="women">Women</a>
 			              </li>
 			              <li id="electronics" data-ng-mouseover="showSubNav($event)">
-			              	<a href="#">Electronics</a>
+			              	<a ui-sref="electronics">Electronics</a>
 			              </li>
 			              <li id="appliances" data-ng-mouseover="showSubNav($event)">
-			              	<a href="#">Appliances</a>
+			              	<a ui-sref="appliances">Appliances</a>
 			              </li>
 			              <li id="babyMore" data-ng-mouseover="showSubNav($event)">
-			              	<a href="#">Baby & More</a>
+			              	<a ui-sref="babyandmore">Baby & More</a>
 			              </li>
 			              <li id="kidsToys" data-ng-mouseover="showSubNav($event)">
-			              	<a href="#">Kids & Toys</a>
+			              	<a ui-sref="kidsandtoys">Kids & Toys</a>
 			              </li>
 			            </ul>
 			          </div><!--/.nav-collapse -->
@@ -41,7 +41,22 @@
 
 		</div>
 		<div id="submenu" class="sub-nav-items" ng-show="my.visibility">
-			
+			<div class="col-lg-12 col-md-12">
+				<div class="subnavbox col-lg-3" ng-repeat="submenu in getvalue | limitTo:quantity">
+					<ul>
+						<li class="subhead">{{submenu.subhead}}</li>
+						<li class="subnav" ng-repeat="childmenu in submenu.childitems"><a ui-sref="{{childport}}">{{childmenu}}</a></li>
+					</ul>				
+				</div>
+			</div>
+			<div class="col-lg-12 col-md-12">
+				<div class="subnavbox col-lg-3" ng-repeat="submenu in getvalue.slice(4,getvalue.length)">
+					<ul>
+						<li class="subhead">{{submenu.subhead}}</li>
+						<li class="subnav" ng-repeat="childmenu in submenu.childitems"><a href="#">{{childmenu}}</a></li>
+					</ul>				
+				</div>			
+			</div>	
 		</div>			
 	</div>
 </div>

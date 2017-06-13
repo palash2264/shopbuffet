@@ -20,6 +20,17 @@ body header .headerSection {
           color: white; }
       body header .headerSection #navigationBox .navbar.navbar-default .nav.navbar-nav.main-menu li:hover {
         box-shadow: 0 0 10px -1px; }
+  body header .headerSection #navigationBox #submenu .subnavbox {
+    padding: 0;
+    margin: 5px 0 0 0; }
+    body header .headerSection #navigationBox #submenu .subnavbox .subhead {
+      list-style: none;
+      font-weight: bold;
+      padding: 0 0 5px 0; }
+    body header .headerSection #navigationBox #submenu .subnavbox .subnav {
+      list-style: none;
+      font-size: 13px;
+      padding: 0 0 3px 0; }
 body header .sub-nav-items {
   height: 400px;
   width: 900px;
