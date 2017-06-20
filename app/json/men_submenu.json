@@ -1,49 +1,41 @@
+
 { 
    "data" : 
    [
       {
+         "parent": "Men",
          "subhead": "Footwear",
-         "childitems" : [
-                           {"Sports Shoes":"men-sub({ pathPort: sports-shoes })"},
-                           {"Casual Shoes":"men-sub({ pathPort: Casual-shoes })"},
-                           {"Formal Shoes":"men-sub({ pathPort: Formal-shoes })"},
-                           {"Sandals & Floaters":"men-sub({ pathPort: Sandals-floaters })"},
-                           {"Flip- Flops":"men-sub({ pathPort: Flip-flops })"},
-                           {"Loafers":"men-sub({ pathPort: loafers })"},
-                           {"Boots":"men-sub({ pathPort: boots })"},
-                           {"Running Shoes":"men-sub({ pathPort: running-shoes })"},
-                           {"Sneakers":"men-sub({ pathPort: sneakers })"}
-                        ]
+         "childitems" : ["Sports Shoes","Casual Shoes","Formal Shoes","Sandals & Floaters","Flip- Flops","Loafers","Boots","Running Shoes","Sneakers"]
       },
       {
+         "parent": "Men",
          "subhead": "Top wear",
-         "childitems" : ["T-Shirts","Shirts","Kurtas","Suits & Blazers","Jackets","Sweatshirts"],
-         "portfolio" : ["sports-shoes","Casual-shoes","Formal-shoes","Sandals-floaters","Flip-flops","loafers","boots","running-shoes","sneakers"]
+         "childitems" : ["T-Shirts","Shirts","Kurtas","Suits & Blazers","Jackets","Sweatshirts"]
       },
       {
+         "parent": "Men",
          "subhead": "Bottom wear",
-         "childitems" : ["Jeans","Trousers","Shorts & 3/4ths","Cargos","Track pants"],
-         "portfolio" : ["Jeans","Trousers","shorts-34th","Cargos","track-pants"]
+         "childitems" : ["Jeans","Trousers","Shorts & 3/4ths","Cargos","Track pants"]
       },
       {
+         "parent": "Men",
          "subhead": "Sports wear",
-         "childitems" : ["Sports T-Shirts","Track Pants","Track Suits","Shorts"],
-         "portfolio" : ["Sports-t-Shirts","Track-Pants","Track-Suits","Shorts"]
+         "childitems" : ["Sports T-Shirts","Track Pants","Track Suits","Shorts"]
       },
       {
+         "parent": "Men",
          "subhead": "Men's Grooming",
-         "childitems" : ["Deodorants Shoes","Perfumes"],
-         "portfolio" : ["Deodorants-Shoes","Perfumes"]
+         "childitems" : ["Deodorants Shoes","Perfumes"]
       },
       {
+         "parent": "Men",
          "subhead": "Innerwear & Sleepwear",
-         "childitems" : ["Briefs & Trunks","Vests","Boxers","Thermals"],
-         "portfolio" : ["Briefs-Trunks","Vests","Boxers","Thermals"]
+         "childitems" : ["Briefs & Trunks","Vests","Boxers","Thermals"]
       },
       {
+         "parent": "Men",
          "subhead": "Watches",
-         "childitems" : ["Fastrack","Casio","Titan","Fossil","Sonata"],
-         "portfolio" : ["Fastrack","Casio","Titan","Fossil","Sonata"]
+         "childitems" : ["Fastrack","Casio","Titan","Fossil","Sonata"]
       }  
    ]
 }

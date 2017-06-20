@@ -2,41 +2,49 @@
    "data" : 
    [
       {
+         "parent": "women",
          "subhead": "Western Wear",
          "childitems" : ["Top, T-Shirts & Shirts","Dresses","Jeans","Trousers & Capris","Shorts & Skirts"],
          "portfolio" : ["Top, T-Shirts-Shirts","Dresses","Jeans","Trousers-Capris","Shorts-Skirts"]
       },
       {
+         "parent": "women",
          "subhead": "Lingerie & Sleepwear",
          "childitems" : ["Bras","Panties","Nightsuits & Nightdresses"],
          "portfolio" : ["Bras","Panties","Nightsuits-Nightdresses"]
       },
       {
+         "parent": "women",
          "subhead": "Ethnic Wear",
          "childitems" : ["Sarees","Kurtas & Kurtis","Dress Material","Lehenga Choli","Blouse","Leggings & Salwars","Anarkali Suits"],
          "portfolio" : ["Sarees","Kurtas-Kurtis","Dress-Material","Lehenga-Choli","Blouse","Leggings-Salwars","Anarkali-Suits"]
       },
       {
+         "parent": "women",
          "subhead": "Sports wear",
          "childitems" : ["Sports T-Shirts","Track Pants","Track Suits","Shorts"],
          "portfolio" : ["Sports-T-Shirts","Track-Pants","Track-Suits","Shorts"]
       },
       {
+         "parent": "women",
          "subhead": "Footwear",
          "childitems" : ["Flats","Heels","Wedges","Sports Shoes","Casual Shoes","Ballerinas","Boots","Slippers & Flip- Flop's"],
          "portfolio" : ["Flats","Heels","Wedges","Sports-Shoes","Casual-Shoes","Ballerinas","Boots","Slippers-Flip-Flop's"]
       },
       {
+         "parent": "women",
          "subhead": "Beauty & Grooming",
          "childitems" : ["Make Up","Skin Care","Hair Care","Deodorants & Perfumes"],
          "portfolio" : ["Make-Up","Skin-Care","Hair-Care","Deodorants-Perfumes"]
       },
       {
+         "parent": "women",
          "subhead": "Jewellery",
          "childitems" : ["Precious Jewellery","Artificial Jewellery","Silver Jewellery"],
          "portfolio" : ["Precious-Jewellery","Artificial-Jewellery","Silver-Jewellery"]
       },
       {
+         "parent": "women",
          "subhead": "Accessories",
          "childitems" : ["Smart Bands","Handbags & Totes","Wallets & Belts","Sunglasses & Frames"],
          "portfolio" : ["Smart-Bands","Handbags-Totes","Wallets-Belts","Sunglasses-Frames"]

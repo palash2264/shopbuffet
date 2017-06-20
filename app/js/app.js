@@ -9,31 +9,32 @@ app.config(['$stateProvider','$urlRouterProvider', function($stateProvider, $url
 			templateUrl: 'html/dashboard.html'
 		})
 		.state('men',{
-			url: '/men',
+			url: '/products/men',
 			templateUrl: 'html/men.html'
 		})
-		.state('men-sub',{
-			url:'/men/:pathport',
-			templateUrl: 'new.html'
+		.state('products',{
+			url:'/products/:parentname/:pathport',
+			templateUrl: 'html/submenu.html',
+			controller: 'submenuPageCntrl'
 		})
 		.state('women',{
-			url: '/women',
+			url: '/products/women',
 			templateUrl: 'html/women.html'
 		})
 		.state('electronics',{
-			url: '/electronics',
+			url: '/products/electronics',
 			templateUrl: 'html/electronics.html'
 		})
 		.state('appliances',{
-			url: '/appliances',
+			url: '/products/appliances',
 			templateUrl: 'html/appliances.html'
 		})
 		.state('kidsandtoys',{
-			url: '/kids-toys',
+			url: '/products/kids-toys',
 			templateUrl: 'html/kidsandtoys.html'
 		})
 		.state('babyandmore',{
-			url: '/baby-more',
+			url: '/products/baby-more',
 			templateUrl: 'html/babyandmore.html'
 		});
 }]);

@@ -45,7 +45,7 @@
 				<div class="subnavbox col-lg-3" ng-repeat="submenu in getvalue | limitTo:quantity">
 					<ul>
 						<li class="subhead">{{submenu.subhead}}</li>
-						<li class="subnav" ng-repeat="childmenu in submenu.childitems"><a ui-sref="{{childport}}">{{childmenu}}</a></li>
+						<li class="subnav" ng-repeat="childmenu in submenu.childitems"><a ng-click="__gotoPage(this,submenu.parent)">{{childmenu}}</a></li>
 					</ul>				
 				</div>
 			</div>
@@ -53,7 +53,7 @@
 				<div class="subnavbox col-lg-3" ng-repeat="submenu in getvalue.slice(4,getvalue.length)">
 					<ul>
 						<li class="subhead">{{submenu.subhead}}</li>
-						<li class="subnav" ng-repeat="childmenu in submenu.childitems"><a href="#">{{childmenu}}</a></li>
+						<li class="subnav" ng-repeat="childmenu in submenu.childitems"><a ng-click="__gotoPage(this,submenu.parent)">{{childmenu}}</a></li>
 					</ul>				
 				</div>			
 			</div>	

@@ -45,7 +45,7 @@ module.exports = function(grunt){
 			options:{
 				beautify:true,
 				mangle: {
-			        reserved: ['$http','response']
+			        reserved: ['$http','response','$scope']
 			    }
 			},
 			all_src : { 

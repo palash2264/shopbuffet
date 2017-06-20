@@ -2,36 +2,41 @@
    "data" : 
    [
       {
+         "parent": "appliances",
          "subhead": "Footwear",
-         "childitems" : ["Sports Shoes","Casual Shoes","Formal Shoes","Sandals & Floaters","Flip- Flops","Loafers","Boots","Running Shoes","Sneakers"],
-         "portfolio" : ["sports-shoes","Casual-shoes","Formal-shoes","Sandals-floaters","Flip-flops","loafers","boots","running-shoes","sneakers"]
+         "childitems" : ["Sports Shoes","Casual Shoes","Formal Shoes","Sandals & Floaters","Flip- Flops","Loafers","Boots","Running Shoes","Sneakers"]
       },
       {
+         "parent": "appliances",
          "subhead": "Top wear",
-         "childitems" : ["T-Shirts","Shirts","Kurtas","Suits & Blazers","Jackets","Sweatshirts"],
-         "portfolio" : ["sports-shoes","Casual-shoes","Formal-shoes","Sandals-floaters","Flip-flops","loafers","boots","running-shoes","sneakers"]
+         "childitems" : ["T-Shirts","Shirts","Kurtas","Suits & Blazers","Jackets","Sweatshirts"]
       },
       {
+         "parent": "appliances",
          "subhead": "Bottom wear",
          "childitems" : ["Jeans","Trousers","Shorts & 3/4ths","Cargos","Track pants"],
          "portfolio" : ["Jeans","Trousers","shorts-34th","Cargos","track-pants"]
       },
       {
+         "parent": "appliances",
          "subhead": "Sports wear",
          "childitems" : ["Sports T-Shirts","Track Pants","Track Suits","Shorts"],
          "portfolio" : ["Sports-t-Shirts","Track-Pants","Track-Suits","Shorts"]
       },
       {
+         "parent": "appliances",
          "subhead": "Men's Grooming",
          "childitems" : ["Deodorants Shoes","Perfumes"],
          "portfolio" : ["Deodorants-Shoes","Perfumes"]
       },
       {
+         "parent": "appliances",
          "subhead": "Innerwear & Sleepwear",
          "childitems" : ["Briefs & Trunks","Vests","Boxers","Thermals"],
          "portfolio" : ["Briefs-Trunks","Vests","Boxers","Thermals"]
       },
       {
+         "parent": "appliances",
          "subhead": "Watches",
          "childitems" : ["Fastrack","Casio","Titan","Fossil","Sonata"],
          "portfolio" : ["Fastrack","Casio","Titan","Fossil","Sonata"]
